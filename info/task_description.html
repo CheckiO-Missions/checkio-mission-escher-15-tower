@@ -1,0 +1,57 @@
+<!-- Describe task in general -->
+
+<img class="for_info_only half" src="{{MEDIA}}cubes.png" style="float:left;max-height: 400px">
+
+<div class="story for_info_only">
+Here goes the last task! All you’ve left to do is to remove the small force field that directly surrounded the Hypercube and you are free to go home (unless, of course, there will be no unforeseen difficulties).<br>
+<br>
+There were several small cubes with the multi-colored sides laying around the cylinder which inclosed the Hypercube. It’s highly possible that you need to use them somehow to remove the force field.
+</div>
+
+<p>
+Your task is to return the maximum possible height of the tower built from the cubes in such a way that each of four its side sides are of the same color.<br>
+Each cube is described by a string of 6 letters in capital Latin characters which represent the color of the respective side (A — Azure, B — Blue, C — Cyan, G — Green, O — Orange, R — Red, S — Scarlet, V — Violet, W — White, Y — Yellow).<br>
+<br>
+The sides are numbered in the following order: front, right, left, back, upper, lower. A cube doesn’t have two sides of the same color.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input: </strong> Array of the cubes descriptions.
+</p>
+
+<p>
+    <strong>Output: </strong> Maximum height of the tower.
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>Example:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">
+tower(['GYVABW', 'AOCGYV', 'CABVGO', 'OVYWGA']) == 3
+tower(['ABCGYW', 'CAYRGO', 'OCYWBA', 'ACYVBR', 'GYVABW']) == 1
+</pre>
+{% else %}
+<pre class="brush: python">
+tower(['GYVABW', 'AOCGYV', 'CABVGO', 'OVYWGA']) == 3
+tower(['ABCGYW', 'CAYRGO', 'OCYWBA', 'ACYVBR', 'GYVABW']) == 1
+</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>How it is used: </strong>
+    For the geometry analisys.
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>Precondition</strong>:<br>
+    2 <= number of cubes <= 10
+</p>
