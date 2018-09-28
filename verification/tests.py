@@ -31,6 +31,26 @@ TESTS = {
         {
             "input":['GYCABW', 'GYCABW', 'GYCABW', 'GYCABW', 'GYCABW'],
             "answer": 5
+        },
+        {
+            "input":['ABCGRS', 'ACBGYV'],
+            "answer": 2
+        },
+        {
+            "input":['GRSCWY', 'GYVBCA', 'VWYBCA'],
+            "answer": 1
+        },
+        {
+            "input":['ORSCWY', 'OYVBCA', 'VWYBCA', 'BWYVGC', 'ORSCWY', 'OYVBCA'],
+            "answer": 2
+        },
+        {
+            "input":['VWYBCA', 'BWYVGC', 'BWYVOG'],
+            "answer": 3
+        },
+        {
+            "input":['RWYBCA', 'RWYVGC', 'CWYVOG'],
+            "answer": 1
         }
     ]
 }

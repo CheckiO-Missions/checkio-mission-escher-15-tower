@@ -13,6 +13,7 @@ if (!global.is_checking) {
     // These "asserts" are used for self-checking and not for an auto-testing
     assert.equal(tower(['GYVABW', 'AOCGYV', 'CABVGO', 'OVYWGA']), 3)
     assert.equal(tower(['ABCGYW', 'CAYRGO', 'OCYWBA', 'ACYVBR', 'GYVABW']), 1)
+    assert.equal(tower(['GYCABW', 'GYCABW', 'GYCABW', 'GYCABW', 'GYCABW']), 5)
 
     console.log("Coding complete? Click 'Check' to earn cool rewards!");
 }
