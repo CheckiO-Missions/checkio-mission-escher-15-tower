@@ -1,0 +1,68 @@
+<!-- Describe task in general -->
+
+<img class="for_info_only half" src="{{MEDIA}}cubes.jpg" style="float:left;max-height: 400px">
+
+<div class="story for_info_only">
+これが最後の仕事です!
+あとはハイパーキューブを取り巻いている小さな力場を取り除くだけです。
+そうすればあとは自由に帰還できます。
+(無論、予期せぬ困難が無い限りですが)<br>
+<br>
+ハイパーキューブを閉じ込めている筒の周りに多彩な各面を持つ複数の小さな立方体があります。力場を取り除くのにこれらを使うのはほぼ確実と思われます。
+</div>
+
+<p>
+あなたの仕事はこれらの立方体で４つの側面が同じ色になるように作成可能な塔の高さの最大値を返すことです。(4つの側面は立方体自身の各面からなる 4色となります)<br>
+立方体は１つの大文字で各面の色が表されています。
+(A - アズール(紺碧), B - 青, C - シアン(薄水色), G - 緑, O - オレンジ, 
+R - 赤, S - スカーレット(緋色), V - 紫, W - 白, Y - 黄)<br>
+<br>
+面の順番は以下の通りです: 前面, 右側面, 左側面, 背面, 上面, 底面。
+立方体の各面の色は重複しません。<br>
+あなたは塔を作るのに各立方体を回転させられます。
+</p>
+
+<div class="for_info_only" style="text-align: center">
+    <img src="{{MEDIA}}tower.jpg" style="max-height: 400px">
+</div>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>入力: </strong> 各立方体を記述した文字列の配列
+</p>
+
+<p>
+    <strong>出力: </strong> 作成可能な塔の高さの最大値
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+<p>
+<strong>例:</strong>
+</p>
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">
+tower(['GYVABW', 'AOCGYV', 'CABVGO', 'OVYWGA']) == 3
+tower(['ABCGYW', 'CAYRGO', 'OCYWBA', 'ACYVBR', 'GYVABW']) == 1
+</pre>
+{% else %}
+<pre class="brush: python">
+tower(['GYVABW', 'AOCGYV', 'CABVGO', 'OVYWGA']) == 3
+tower(['ABCGYW', 'CAYRGO', 'OCYWBA', 'ACYVBR', 'GYVABW']) == 1
+</pre>
+{% endif %}
+</div>
+
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+    <strong>どのように使われるか: </strong>
+    幾何学的な分析に使用できます
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p><strong>事前条件</strong>:<br>
+    2 <= number of cubes <= 10
+</p>
